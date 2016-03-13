@@ -4,7 +4,7 @@ Acquaintance with Selenium WebDriver
 - Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - Install [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  for your platform
 - In project parameters choose Maven as a build tool and JDK as a project SDK
-- In pom.xml include dependencies for WebDriver and TestNG: [Web Driver for Java](http://www.seleniumhq.org/docs/03_webdriver.jsp#introducing-webdriver), [Test NG for Maven](http://testng.org/doc/maven.html)
+- In [pom.xml](/pom.xml) include dependencies for WebDriver and TestNG: [Web Driver for Java](http://www.seleniumhq.org/docs/03_webdriver.jsp#introducing-webdriver), [Test NG for Maven](http://testng.org/doc/maven.html)
 
 ##2. Setting up Firefox
 - Download [Firefox](https://www.mozilla.org/ru/firefox/new/?scene=2)
@@ -14,4 +14,7 @@ Acquaintance with Selenium WebDriver
 - Selenium Java API [documentation](http://selenium.googlecode.com/svn@7074/trunk/docs/api/java/index.html).
 - [Selenium official website](http://www.seleniumhq.org/)
 
-
+##Commit errors
+To avoid commit error with CRLF you can use git shell commands: <br />
+$ git config --global core.autocrlf false <br />
+$ git config --global core.safecrlf false
