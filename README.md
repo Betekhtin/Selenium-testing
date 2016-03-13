@@ -4,7 +4,29 @@ Acquaintance with Selenium WebDriver
 - Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - Install [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  for your platform
 - In project parameters choose Maven as a build tool and JDK as a project SDK
-- In [pom.xml](/pom.xml) include dependencies for WebDriver and TestNG: [Web Driver for Java](http://www.seleniumhq.org/docs/03_webdriver.jsp#introducing-webdriver), [Test NG for Maven](http://testng.org/doc/maven.html)
+- In [pom.xml](/pom.xml) include dependencies for WebDriver and TestNG: [Web Driver for Java](http://www.seleniumhq.org/docs/03_webdriver.jsp#introducing-webdriver), [Test NG for Maven](http://testng.org/doc/maven.html)<br />
+It should look like this:
+
+        ```
+        <project>
+        ...
+           <dependencies>
+              <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-java</artifactId>
+                <version>2.52.0</version>
+              </dependency>
+              <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>6.8</version>
+                <scope>test</scope>
+              </dependency>
+            </dependencies>
+        ...
+        </project>
+        ```
+
 
 ##2. Setting up Firefox
 - Download [Firefox](https://www.mozilla.org/ru/firefox/new/?scene=2)
